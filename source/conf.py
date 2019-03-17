@@ -80,7 +80,16 @@ html_theme = "sphinx_rtd_theme"
 # further.  For a list of options available for each theme, see the
 # documentation.
 #
-# html_theme_options = {}
+html_theme_options = {
+  'prev_next_buttons_location': 'None'
+}
+
+html_context = {
+  'display_github': True,
+  'github_user': 'rivernate',
+  'github_repo': 'notes.rivernate.com',
+  'github_version': 'master/source/'
+}
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
