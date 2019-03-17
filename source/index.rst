@@ -6,4 +6,5 @@ Rivernate's Notes Index
    :maxdepth: 2
    :caption: Contents:
 
-   docker/setup
+   docker
+   linux
