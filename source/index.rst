@@ -6,5 +6,5 @@ Rivernate's Notes Index
    :maxdepth: 2
    :caption: Contents:
 
+   aws
    docker
-   linux

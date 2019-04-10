@@ -1,8 +1,8 @@
-Docker
-===========
+AWS
+===
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
 
-   docker/traefik
+   aws/aws_shell
