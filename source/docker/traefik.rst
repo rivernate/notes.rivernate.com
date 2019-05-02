@@ -19,7 +19,7 @@ Installation
 Configuration
 *************
 
-Add the following to add the following to ``/etc/NetworkManager/NetworkManager.conf``
+Add the following to ``/etc/NetworkManager/NetworkManager.conf``
 
 .. code-block:: bash
 
@@ -30,3 +30,20 @@ Sometimes it's necessary to run ``setcap`` to allow traefik to bind to port 80
 .. code-block:: bash
 
     sudo setcap CAP_NET_BIND_SERVICE=+eip /bin/traefik
+
+
+Add the following to  ``/etc/traefik/traefik.toml``
+
+.. code-block:: toml
+
+   ################################################################
+   # Web configuration backend
+   ################################################################
+   [web]
+   address = ":8080"
+   ################################################################
+   # Docker configuration backend
+   ################################################################
+   [docker]
+   domain = "docker"
+   watch = true
