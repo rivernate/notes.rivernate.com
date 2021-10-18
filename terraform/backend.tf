@@ -1,7 +1,10 @@
 terraform {
-  backend "s3" {
-    bucket = "terraform.rivernate.com"
-    key    = "rivernate.com/notes_website"
-    region = "us-west-2"
+  backend "remote" {
+    hostname = "app.terraform.io"
+    organization = "rivernate"
+
+    workspaces {
+      name = "notesrivernatecom"
+    }
   }
 }
